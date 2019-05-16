@@ -30,9 +30,7 @@
 
 <mixer>
     <!-- These are the initial mixer settings -->
-    <ctl name="Mobee Spk PA Mode" value="MODE_3" />
-    <ctl name="Ext Spk Switch" value="Off" />
-    <ctl name="Boost Option" value="BOOST_ALWAYS" />
+    <ctl name="Boost Option" value="BOOST_ON_FOREVER" />
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
     <ctl name="Voice Rx Device Mute" id="1" value="-1" />
     <ctl name="Voice Rx Device Mute" id="2" value="20" />
@@ -54,9 +52,9 @@
     <ctl name="TTY Mode" value="Off" />
     <ctl name="HPHL Volume" value="9" />
     <ctl name="HPHR Volume" value="9" />
-    <ctl name="RX1 Digital Volume" value="87" />
-    <ctl name="RX2 Digital Volume" value="87" />
-    <ctl name="RX3 Digital Volume" value="87" />
+    <ctl name="RX1 Digital Volume" value="84" />
+    <ctl name="RX2 Digital Volume" value="84" />
+    <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="IIR1 INP1 Volume" value="84" />
     <ctl name="IIR1 INP2 Volume" value="84" />
     <ctl name="IIR1 INP3 Volume" value="84" />
@@ -560,15 +558,8 @@
     </path>
 
     <path name="speaker">
-        <ctl name="MI2S_RX Channels" value="Two" />
-        <ctl name="RX2 MIX1 INP2" value="RX1" />
-        <ctl name="RX2 MIX1 INP1" value="RX2" />
-        <ctl name="RDAC2 MUX" value="RX2" />
-        <ctl name="HPHR" value="Switch" />
-        <ctl name="RX1 MIX1 INP1" value="RX1" />
-        <ctl name="RX1 MIX1 INP2" value="RX2" />
-        <ctl name="HPHL" value="Switch" />
-        <ctl name="Ext Spk Switch" value="On" />
+        <ctl name="RX3 MIX1 INP1" value="RX1" />
+        <ctl name="SPK DAC Switch" value="1" />
     </path>
 
     <path name="speaker-mic">
@@ -579,7 +570,7 @@
     <path name="handset">
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="RX1 Digital Volume" value="87" />
+        <ctl name="RX1 Digital Volume" value="84" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="EAR_S" value="Switch" />
     </path>
@@ -647,8 +638,8 @@
     </path>
 
     <path name="speaker-and-headphones">
-        <path name="speaker" />
         <path name="headphones" />
+        <path name="speaker" />
     </path>
 
     <path name="usb-headphones">

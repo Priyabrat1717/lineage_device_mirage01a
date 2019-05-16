@@ -18,7 +18,7 @@
 # Inherit from msm8916-common
 include device/LYF/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/LYF/mobee01a
+DEVICE_PATH := device/LYF/mirage01a
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -41,14 +41,14 @@ TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
 # Init
-TARGET_LIBINIT_MSM8916_DEFINES_FILE := $(DEVICE_PATH)/init/init_mobee01a.cpp
+TARGET_LIBINIT_MSM8916_DEFINES_FILE := $(DEVICE_PATH)/init/init_mirage01a.cpp
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 LZMA_RAMDISK_TARGETS := recovery
-TARGET_KERNEL_SOURCE := kernel/LYF/mobee01a
-TARGET_KERNEL_CONFIG := lineage_mobee01a_defconfig
+TARGET_KERNEL_SOURCE := kernel/LYF/mirage01a
+TARGET_KERNEL_CONFIG := lineage_mirage01a_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -70,4 +70,4 @@ endif
 BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 3
 
 # Inherit from proprietary files
-include vendor/LYF/mobee01a/BoardConfigVendor.mk
+include vendor/LYF/mirage01a/BoardConfigVendor.mk

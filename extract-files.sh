@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-export DEVICE=mobee01a
+export DEVICE=mirage01a
 export DEVICE_COMMON=msm8916-common
 export VENDOR=LYF
 
