@@ -16,7 +16,7 @@
 #
 
 # Inherit from msm8916-common
-$(call inherit-product, device/LYF/mirage01a/device.mk)
+$(call inherit-product, device/LYF/mirage01a/syberia_mirage01a.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
