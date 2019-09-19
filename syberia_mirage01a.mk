@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/LYF/mirage01a/full_mirage01a.mk)
+$(call inherit-product, device/LYF/mirage01a/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/syberia/config/common_mini_phone.mk)
