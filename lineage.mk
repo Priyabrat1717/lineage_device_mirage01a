@@ -21,7 +21,7 @@ $(call inherit-product, vendor/syberia/config/common_mini_phone.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := lineage_mirage01a
+PRODUCT_NAME := syberia_mirage01a
 BOARD_VENDOR := LYF
 PRODUCT_DEVICE := mirage01a
 
