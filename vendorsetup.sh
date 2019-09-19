@@ -14,6 +14,5 @@
 # limitations under the License.
 #
 
-for var in eng user userdebug; do
-  add_lunch_combo omni_oxygen-$var
-done
+add_lunch_combo syberia_mirage01a-user
+add_lunch_combo syberia_mirage01a-userdebug
