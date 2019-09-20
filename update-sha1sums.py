@@ -21,7 +21,7 @@
 from hashlib import sha1
 import sys
 
-device='msm8916-common'
+device='mirage01a'
 vendor='LYF'
 
 lines = [ line for line in open('proprietary-files.txt', 'r') ]
