@@ -16,7 +16,7 @@
 $(call inherit-product, device/LYF/mirage01a/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/syberia/common.mk)
+$(call inherit-product, vendor/LYF/mirage01a/mirage01a-vendor.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
