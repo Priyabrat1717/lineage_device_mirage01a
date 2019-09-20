@@ -16,7 +16,7 @@
 #
 
 # Inherit from msm8916-common
-include device/LYF/msm8916-common/BoardConfigCommon.mk
+include device/LYF/mirage01a/BoardConfig.mk
 
 DEVICE_PATH := device/LYF/mirage01a
 
