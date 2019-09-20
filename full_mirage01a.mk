@@ -23,7 +23,7 @@ $(call inherit-product, device/LYF/mirage01a/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mirage01a
-PRODUCT_NAME := full_mirage01a
+PRODUCT_NAME := syberia_mirage01a
 PRODUCT_BRAND := LYF
-PRODUCT_MODEL := Water 1
+PRODUCT_MODEL := LYF Water 1
 PRODUCT_MANUFACTURER := LYF
