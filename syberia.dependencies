@@ -5,7 +5,7 @@
     "branch"     : "syberia"
   },
   {
-    "repository": "Legendary_kernel_mirage01a",
+    "repository": "android_kernel_mirage01a",
     "target_path": "kernel/LYF/mirage01a"
     "branch"     : "master"
   }
