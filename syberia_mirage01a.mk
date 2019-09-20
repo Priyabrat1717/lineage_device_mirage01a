@@ -21,9 +21,20 @@ $(call inherit-product, vendor/syberia/common.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := syberia_mirage01a
-BOARD_VENDOR := LYF
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from mirage01a device
+$(call inherit-product, device/LYF/mirage01a/device.mk)
+
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mirage01a
+PRODUCT_NAME := syberia_mirage01a
+PRODUCT_BRAND := LYF
+PRODUCT_MODEL := LYF Water 1
+PRODUCT_MANUFACTURER := LYF
+PRODUCT_VENDOR := LYF
 
 PRODUCT_GMS_CLIENTID_BASE := android-ckt
 
