@@ -48,7 +48,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 LZMA_RAMDISK_TARGETS := recovery
 TARGET_KERNEL_SOURCE := kernel/LYF/mirage01a
-TARGET_KERNEL_CONFIG := lineage_mirage01a_defconfig
+TARGET_KERNEL_CONFIG := legendary_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -71,3 +71,11 @@ BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 3
 
 # Inherit from proprietary files
 include vendor/LYF/mirage01a/BoardConfigVendor.mk
+
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
+# HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
+
