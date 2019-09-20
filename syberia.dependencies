@@ -1,7 +1,7 @@
 [
   {
     "repository": "lineage_device_mirage01a",
-    "target_path": "device/LYF/miragey"
+    "target_path": "device/LYF/mirage01a"
     "branch"     : "syberia"
   },
   {
