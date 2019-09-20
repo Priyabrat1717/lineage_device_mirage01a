@@ -15,8 +15,12 @@
 # limitations under the License.
 #
 
-# Inherit from msm8916-common
+# Inherit from mirage01a
 $(call inherit-product, device/LYF/mirage01a/device.mk)
+
+
+$(call inherit-product, vendor/LYF/mirage01a/mirage01a-vendor.mk)
+
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
