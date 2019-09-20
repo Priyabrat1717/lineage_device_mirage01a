@@ -1,12 +1,20 @@
 [
   {
-    "repository": "lineage_device_mirage01a",
-    "target_path": "device/LYF/mirage01a"
-    "branch"     : "syberia"
+    "remote": "github",
+    "repository": "Priyabrat1717/android_device_LYF_msm8916-common",
+    "target_path": "device/LYF/msm8916-common",
+    "revision" : "lineage-16.0"
   },
   {
-    "repository": "android_kernel_mirage01a",
-    "target_path": "kernel/LYF/mirage01a"
-    "branch"     : "master"
+    "remote": "github",
+    "repository": "Priyabrat1717/android_kernel_LYF_mirage01a",
+    "target_path": "kernel/LYF/mirage01a",
+    "revision" : "lineage-16.0"
+  },
+  {
+    "remote": "github",
+    "repository": "Priyabrat1717/vendor_LYF",
+    "target_path": "vendor/LYF",
+    "revision" : "lineage-15.1"
   }
 ]
