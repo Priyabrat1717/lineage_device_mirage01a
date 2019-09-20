@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_mirage01a.mk
+    $(LOCAL_DIR)/syberia_mirage01a.mk
